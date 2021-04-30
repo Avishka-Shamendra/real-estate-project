@@ -1,0 +1,58 @@
+
+#header{
+    height: 70px;
+    background: #273D5F;
+    color:#fff;
+
+}
+
+#branding h1{
+    color:#fff;
+}
+
+a:link, a:visited{
+    color: #29AB88;
+}
+div.breadcrumbs{
+     background: #29AB88;
+     color: #000;
+}
+
+div.breadcrumbs a{
+    font-weight: bold;
+    color: #000;
+}
+
+div.breadcrumbs a:hover,a:active{
+    color: #273D5F;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    margin: 0;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    background: #273D5F;
+}
+
+
+
+element.style {
+}
+.main > .content {
+    flex: 1 0;
+    max-width: 100%;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
+    color: var(--body-fg);
+    background: var(--body-bg);
+}

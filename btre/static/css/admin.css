@@ -11,16 +11,16 @@
 }
 
 a:link, a:visited{
-    color: #29AB88;
+    color: #273D5F;
 }
 div.breadcrumbs{
      background: #29AB88;
-     color: #000;
+     color: #273D5F;
 }
 
 div.breadcrumbs a{
     font-weight: bold;
-    color: #000;
+    color: #273D5F;
 }
 
 div.breadcrumbs a:hover,a:active{
@@ -37,22 +37,3 @@ div.breadcrumbs a:hover,a:active{
 }
 
 
-
-element.style {
-}
-.main > .content {
-    flex: 1 0;
-    max-width: 100%;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    font-family: "Roboto","Lucida Grande","DejaVu Sans","Bitstream Vera Sans",Verdana,Arial,sans-serif;
-    color: var(--body-fg);
-    background: var(--body-bg);
-}

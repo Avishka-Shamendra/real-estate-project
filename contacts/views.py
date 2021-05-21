@@ -1,5 +1,6 @@
 from django.shortcuts import redirect
 from django.contrib import messages
+#  from django.core.mail import send_mail
 from .models import Contact
 
 # Create your views here.
@@ -14,9 +15,27 @@ def contact(request):
         user_id = request.POST['user_id']
         realtor_email = request.POST['realtor_email']
 
+
+        # Check for existing inquiry by user
+        if request.user.is_authenticated:
+            user_id=request.user.id
+            has_conatcted = Contact.objects.all().filter(listing_id=listing_id,user_id=user_id)
+            if(has_conatcted):
+                messages.error(request, "You have already made an inquiry for this listing")
+                return redirect('/listings/'+listing_id)
         contact = Contact(
             listing=listing,listing_id=listing_id, name=name, email=email, phone=phone,message=message,user_id=user_id
         )
         contact.save()
+        
+        # Send notification mail to realtor
+        # send_mail(
+        #     'BTRE Property Listing Inquiry',
+        #     'There is a new inquiry for '+ listing +' listing. Login into your BTRE admin panel for more info.',
+        #     'example@gmail.com',
+        #     [realtor_email,],
+        #     fail_silently=False
+        # )
+
         messages.success(request, "Your request has been submitted, a realtor will get back to you soon :)")
     return redirect('/listings/'+listing_id)

@@ -155,3 +155,8 @@ MESSAGE_TAGS = {
 # EMAIL_HOST_USER ='example@gmail.com'
 # EMAIL_HOST_PASSWORD ='example'
 # EMAIL_USE_TLS = True
+
+try:
+    from .local_settings import *
+except ImportError:
+    pass

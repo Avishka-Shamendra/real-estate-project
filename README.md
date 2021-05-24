@@ -1,6 +1,6 @@
 # BT Real Estate Web App :house_with_garden:
 
-This is a web app designed for a real estate company to showcase their listings. [Django](https://www.djangoproject.com/) was used for the development with Postgresql.
+This is a web app designed for a real estate company to showcase their listings. [Django](https://www.djangoproject.com/) was used for the development with Postgresql. You can visit the web app from [HERE](http://167.172.155.174/)
 
 ## Screenshots :camera:
 

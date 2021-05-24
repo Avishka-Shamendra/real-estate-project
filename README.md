@@ -8,6 +8,8 @@ Home Page
 
 Listings Page
 
+Single Listing Page
+
 Admin Panel
 
 ## Setup Guide :raised_hands:

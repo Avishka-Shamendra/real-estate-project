@@ -4,13 +4,21 @@ This is a web app designed for a real estate company to showcase their listings.
 
 ## Screenshots :camera:
 
-Home Page
+#### Home Page
 
-Listings Page
+<img src="screenshots/home-pg.png" width="1000">
 
-Single Listing Page
+#### Listings Page
 
-Admin Panel
+<img src="screenshots/listings-pg.png" width="1000">
+
+#### Single Listing Page
+
+<img src="screenshots/listing-pg.png" width="1000">
+
+#### Admin Panel
+
+<img src="screenshots/admin-pg.png">
 
 ## Setup Guide :raised_hands:
 
